@@ -76,6 +76,8 @@ list:
       default_value_format: '%Y-%m-%d %H:%M:%S.%f'
     description:
       selector: a[href^="/Home/Episode"]
+    title:
+      text: "{{ fields['description'] }}"
 #搜索功能配置
 search:
   paths:
@@ -133,3 +135,5 @@ torrents:
       default_value_format: '%Y-%m-%d %H:%M:%S.%f'
     description:
       selector: a[href^="/Home/Episode"]
+    title:
+      text: "{{ fields['description'] }}"
