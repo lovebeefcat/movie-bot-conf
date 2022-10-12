@@ -191,3 +191,36 @@ torrents:
       filters:
         - name: replace
           args: [ "[优惠剩余时间：]","" ]
+
+detail:
+  item:
+    selector: table.mainouter > tr:last-child
+  fields:
+    downloadvolumefactor:
+      case:
+        font.halfdown: 0.5
+        "*": 1
+    title:
+      selector: h1[id="top"]
+      remove: b
+    download:
+      selector: form.index
+      attribute: action
+    filename:
+      selector: form.index > input
+      attribute: value
+    description:
+      selector: table > tr:nth-child(3) > td:last-child
+    intro:
+      selector: table > tr:nth-child(9) > td > div[id="kdescr"]
+    date:
+      selector: table > tr:nth-child(1) > td > span[title]
+      attribute: title
+      filters:
+        - name: dateparse
+          args: "%Y-%m-%d %H:%M:%S"
+    id:
+      text: "{{fields['download']}}"
+      filters:
+        - name: re_search
+          args: [ 'id=(\d+)', 1 ]
