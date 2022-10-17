@@ -156,9 +156,9 @@ torrents:
         img.pro_2up: 2
         "*": 1
     free_deadline:
-      default_value: "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}"
+      default_value: "{% if fields['downloadvolumefactor']!=1 %}{{max_time}}{% endif%}"
       default_value_format: '%Y-%m-%d %H:%M:%S.%f'
-      selector: 'td[class] > span[title]'
+      selector: 'td.embedded > span[title]'
       attribute: title
       filters:
         - name: dateparse
