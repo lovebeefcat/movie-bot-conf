@@ -152,7 +152,7 @@ torrents:
       optional: true
     date_added:
       # time added
-      selector: td:nth-last-child(7):not(:has(span[title])):not(:has(a))
+      selector: td:nth-last-child(7)
       optional: true
     date:
       text: "{% if fields['date_elapsed'] or fields['date_added'] %}{{ fields['date_elapsed'] if fields['date_elapsed'] else fields['date_added'] }}{% else %}now{% endif %}"
