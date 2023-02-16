@@ -105,7 +105,7 @@ search:
 
 torrents:
   list:
-    selector: table.torrents > tr:has(a[href^="download.php?"])
+    selector: table.torrents > tr:has(b)
   fields:
     id:
       selector: a[href^="details_"]
