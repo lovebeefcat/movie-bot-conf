@@ -2,7 +2,7 @@ id: audiences
 name: 观众
 domain: https://audiences.me/
 encoding: UTF-8
-config_url: https://ghproxy.com/https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/audiences.yml
+config_url: https://gh-proxy.com//https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/audiences.yml
 
 login:
   test:
