@@ -4,6 +4,9 @@ name: 馒头
 domain: https://kp.m-team.cc/
 encoding: UTF-8
 config_url: https://ghproxy.com/https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/mteam.yml
+allow_auth_type:
+  - cookies
+  - api_key
 
 login:
   test:
