@@ -2,7 +2,7 @@ id: acgrip
 name: acg
 domain: https://acg.rip
 encoding: UTF-8
-config_url: https://ghproxy.com/https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/acg.yml
+config_url: https://gh-proxy.com//https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/acg.yml
 
 login:
   required: false
