@@ -1,7 +1,7 @@
 #!DATA etag=90f6c2914401d89245f71c402d736e582af31257a1f0ee5eb9e13ae1cc79f7c9
 id: mteam
 name: 馒头
-domain: https://kp.m-team.cc/
+domain: https://api.m-team.io/
 encoding: UTF-8
 config_url: https://gh-proxy.com/https://raw.githubusercontent.com/lovebeefcat/movie-bot-conf/main/sites/mteam.yml
 allow_auth_type:
